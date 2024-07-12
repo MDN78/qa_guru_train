@@ -13,7 +13,6 @@ def api_session():
     session = TestSession()
     session.base_url = 'https://swapi.dev/api'
     session.headers.update({'user-agent': 'Opera'})
-    # session.params = {'format': 'wookie'}
     return session
 
 
