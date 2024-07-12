@@ -12,6 +12,8 @@ class TestPeople:
 
     @allure.story('Positive tests')
     class TestPositive:
+
+        @allure.title('Gett all people dates')
         def test_get_all_people(self, api_session):
             response = api_session.request(method='GET', path='/people/')
             print(response)
