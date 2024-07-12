@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "qa-guru-additional-generate-1"
+version = "0.1.0"
+description = ""
+authors = ["Dimitri Maksimov <dmitry-maksimov@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+faker = "^25.2.0"
+pytest = "^8.2.1"
+requests = "^2.32.3"
+pydantic = "2.7.4"
+allure-pytest = "2.13.5"
+
+[tool.pytest.ini_options]
+addopts = [
+    "-s",
+    "-v",
+    "--alluredir", "allure-results",
+    "--clean-alluredir",
+]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
