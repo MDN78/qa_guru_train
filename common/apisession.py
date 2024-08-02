@@ -5,7 +5,6 @@ from requests import Session, Response
 
 logger = logging.getLogger()
 
-
 def allure_request_logger(function):
 
     def wrapper(*args, **kwargs):
@@ -21,7 +20,6 @@ def allure_request_logger(function):
         return response
 
     return wrapper()
-
 
 
 '''Переопределили класс session под свои нужды и задали там параметры'''
