@@ -754,3 +754,7 @@ If no occurrences can be found, a count of 0 should be returned.
 
 def strCount(string, letter):
     return string.count(letter)
+
+'''
+-----------------
+'''
