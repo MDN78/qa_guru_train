@@ -19,7 +19,7 @@ def allure_request_logger(function):
         logger.info(response.json())
         return response
 
-    return wrapper()
+    return wrapper
 
 
 '''Переопределили класс session под свои нужды и задали там параметры'''

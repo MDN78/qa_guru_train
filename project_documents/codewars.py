@@ -758,3 +758,10 @@ def strCount(string, letter):
 '''
 -----------------
 '''
+
+lines = ["a", "b", "c"]
+
+def number(lines):
+    #your code here
+    p = {j: i for (i, j) in enumerate(lines)}
+    print(p)
